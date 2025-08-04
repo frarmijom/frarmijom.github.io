@@ -94,10 +94,28 @@
       </ul>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>¿Te interesa una reunión o diagnóstico inicial? Escríbeme a <a href="mailto:franco.armijo@gmail.com">franco.armijo@gmail.com</a> o envíame un mensaje por LinkedIn.</p>
-    </section>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
+    <label for="name">Nombre:</label><br />
+    <input type="text" name="name" required /><br /><br />
+
+    <label for="email">Correo:</label><br />
+    <input type="email" name="email" required /><br /><br />
+
+    <label for="message">Mensaje:</label><br />
+    <textarea name="message" rows="5" required></textarea><br /><br />
+
+    <!-- Evita spam bots -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Mensaje de éxito redirigido -->
+    <input type="hidden" name="_next" value="https://frarmijom.github.io/#gracias" />
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
   </main>
 
   <footer>
